@@ -1,0 +1,66 @@
+% !TEX program = xelatex
+
+\documentclass{resume}
+%\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{Jiajun "Thomas" Liang}
+
+\basicInfo{
+  \email{thmsljj@gmail.com} \textperiodcentered\ 
+  \linkedin[Thomas Liang]{https://www.linkedin.com/in/thomas-jiajun-liang-52270823b/} \textperiodcentered\
+  \github[ThmsLiang]{https://github.com/ThmsLiang}}
+
+\section{Research Interests}
+Geospatial Foundation Models, Human Mobility, Zero-shot and Cross-region Data Mining
+
+\section{Education}
+\datedsubsection{\textbf{University of Southern California}, Los Angeles, California}{Aug 2020 -- Dec 2025}
+\textit{B.S + M.S} in Computer Science (CSCI), Dean's List
+
+\section{Projects and Publications}
+
+\datedsubsection{\textbf{Interactive Traffic Causality Discovery}}{}
+Project Advisor: Dr. John Krum, Prof. Ibrahim Sabek
+\begin{itemize}
+\item We built on our team's previous work on supervised event-based traffic causality discovery algorithm NEXICA, and examine the primary bottleneck: how to propose labels for traffic expert to review so that the model can learn as efficiently as possible. We combine both model uncertainty and expected accuracy change to suggest most valuable data pair, and construct a review loop for experts to examine and mark. On real world traffic data and heuristic ground-truth labels, our model remain state-of-the-art on multiple accuracy metrics against existing causality discovery algorithm and active learning strategies.
+\item \textbf{[Sigspatial 2026]} Thomas Jiajun Liang, John Krum, Ibrahim Sabek. HALT: Human-in-the-Loop Data Acquisition for Supervised Traffic Causality Discovery.
+\end{itemize}
+
+\datedsubsection{\textbf{Zero-shot Cross-city GPS Trajectory Generation via Flow Matching Model}}{}
+Project Advisor: Chen Chu (PhD student), Prof. Cyrus Shahabi
+\begin{itemize}
+\item Existing city topology conditioned GPS trajectory synthesis model can perform well for generating pseudo trajectories, but they perform poorly on cross city generation because they lack generalizability and rely heavily on trip-specific conditions which already leak trajectory information. We focus on cross-city zero-shot trajectory generation: Generating synthetic trajectory on a new city based on a model trained on another city, planned routes and information available from map only.
+\item \textbf{[In preparation]} Thomas Jiajun Liang, Chen Chu, Cyrus Shahabi. FMTraj: Zero-shot GPS Trajectory Generation with Flow Matching Model.
+\end{itemize}
+
+\datedsubsection{\textbf{High-Resolution Population Mapping from Multi-resolution Conditions}}{}
+Collaborators: Zihang Gao, Qianshu Peng (Graduate classmates)
+\begin{itemize}
+\item We examine the idea of improving population mapping accuracy by combining conditions with different resolutions: VIIRS nighttime light (500m) and WSF settlement mask(10m). We hypothesized that these two conditions can provide different information about where people live, thus a model that successfully utilize both conditions can perform better on population mapping. We examine both task: census disaggregation (distribute broad region census to finer cell level) and censusless prediction (estimating population density without census information). Since population is always distributed unevenly, we utilized residual learning: first a simple baseline module produces a guess of the region, then a diffusion model outputs the correction of the guess based on fused multi-resolution conditions.
+\item \textbf{[KDD Cycle 1 under review]} Thomas Jiajun Liang, Zihang Gao, Qianshu Peng. MosaicPop: Multi-Resolution Residual Population Mapping.
+\end{itemize}
+
+\section{Experience}
+
+\datedsubsection{\textbf{New Voyage LLC}, Boston, MA}{Feb 2026 - present}
+\role{AI Researcher | AI for Science, AI Workflow Tooling}{}
+\begin{itemize}
+  \item Build internal AI workflow tools that streamline day-to-day research and engineering work, improving team efficiency and productivity.
+  \item Design AI-for-Science (AI4S) algorithms for composite material design and deNO\textsubscript{x} process optimization, built to stay reliable with scarce and noisy experimental data.
+\end{itemize}
+
+\datedsubsection{\textbf{USC Info Lab}, Los Angeles, CA}{Jan 2025 - present}
+\role{Graduate Research Assistant | Machine Learning, Causality Inference, Spatial Analysis}{}
+  Supervisor: Prof. Cyrus Shahabi
+
+\datedsubsection{\textbf{iFLYTEK Co.}, Hefei, China}{Jun 2023 - Aug 2023}
+\role{Software Developer Intern - Backend | Node.js, Express.js, MongoDB}{}
+\begin{itemize}
+  \item Built RESTful APIs with \textbf{Express.js} and \textbf{Mongoose} for a nationwide after-sale service backend, sped up store-location queries by \textbf{20\%} with geospatial indexing, and set up a \textbf{CI/CD pipeline} with Git, Jenkins, Docker and K8S.
+\end{itemize}
+
+\end{document}

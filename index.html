@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jiajun "Thomas" Liang</title>
+  <meta name="description" content="Jiajun &quot;Thomas&quot; Liang — researcher in geospatial foundation models, human mobility, and zero-shot cross-region data mining.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Sans:wght@400;500&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrap">
+
+    <header class="intro">
+      <div class="intro-text">
+        <h1>Jiajun &ldquo;Thomas&rdquo; Liang</h1>
+        <nav class="links" aria-label="Contact">
+          <a href="mailto:thmsljj@gmail.com">Email</a>
+          <a href="https://github.com/ThmsLiang">GitHub</a>
+          <a href="https://www.linkedin.com/in/thomas-jiajun-liang-52270823b/">LinkedIn</a>
+          <a href="cv/Thomas_Liang_Resume.pdf">CV (PDF)</a>
+        </nav>
+        <p>
+          I am an AI researcher at New Voyage LLC in Boston and a graduate research assistant at the
+          <a href="https://infolab.usc.edu/">USC Info Lab</a>. I received my B.S. and M.S. in Computer Science
+          from the University of Southern California (2020&ndash;2025, Dean&rsquo;s List), where I was advised by
+          Prof. Cyrus Shahabi during my master&rsquo;s. My research focuses on <strong>geospatial foundation models</strong>,
+          <strong>human mobility</strong>, and <strong>zero-shot, cross-region data mining</strong>: building models that learn from one city or
+          region and generalize to places they have never seen, with work spanning GPS trajectory generation,
+          traffic causality discovery, and high-resolution population mapping.
+        </p>
+      </div>
+      <!-- Replace images/profile.jpg with your photo (square works best). -->
+      <figure class="photo">
+        <img src="images/profile.jpg" alt="Photo of Thomas Liang" onerror="this.parentNode.classList.add('empty');this.remove()">
+      </figure>
+    </header>
+
+    <section>
+      <h2>Research &amp; Publications</h2>
+
+      <!-- Each project figure lives in images/; replace the file to swap the figure. -->
+      <article class="project">
+        <figure class="fig">
+          <img src="images/halt.jpg" alt="Map of Los Angeles traffic sensors used in HALT" onerror="this.parentNode.classList.add('empty');this.remove()">
+        </figure>
+        <div class="body">
+          <h3>HALT: Human-in-the-Loop Data Acquisition for Supervised Traffic Causality Discovery</h3>
+          <p class="authors"><b>Thomas Jiajun Liang</b>, John Krum, Ibrahim Sabek</p>
+          <p class="venue">SIGSPATIAL 2026 Research Track</p>
+          <p>
+            Building on our team&rsquo;s supervised, event-based traffic causality discovery algorithm NEXICA, this
+            work targets its main bottleneck: choosing which labels to propose for traffic experts to review so the
+            model learns as efficiently as possible. We combine model uncertainty with expected accuracy change to
+            suggest the most valuable event pairs, and wrap this in a review loop where experts examine and mark
+            them. On real-world traffic data with heuristic ground-truth labels, the method stays state of the art
+            on multiple accuracy metrics against existing causality discovery algorithms and active learning
+            strategies.
+          </p>
+        </div>
+      </article>
+
+      <article class="project">
+        <figure class="fig">
+          <img src="images/mosaicpop.png" alt="Population density, VIIRS nighttime lights and WSF settlement fraction for the Lucerne–Zug region" onerror="this.parentNode.classList.add('empty');this.remove()">
+        </figure>
+        <div class="body">
+          <h3>MosaicPop: Multi-Resolution Residual Population Mapping</h3>
+          <p class="authors"><b>Thomas Jiajun Liang</b>, Zihang Gao, Qianshu Peng</p>
+          <p class="venue">Under review, KDD Cycle 1</p>
+          <p>
+            We combine conditions at different resolutions, VIIRS nighttime light (500&nbsp;m) and the WSF
+            settlement mask (10&nbsp;m), on the hypothesis that each carries different information about where
+            people live. We address both census disaggregation (distributing regional census counts to finer cells)
+            and census-less prediction (estimating density without census input). Because population is distributed
+            unevenly, we use residual learning: a simple baseline produces an initial estimate, and a diffusion
+            model predicts its correction from the fused multi-resolution conditions.
+          </p>
+        </div>
+      </article>
+
+      <article class="project">
+        <figure class="fig">
+          <img src="images/fmtraj.png" alt="FMTraj method overview" onerror="this.parentNode.classList.add('empty');this.remove()">
+        </figure>
+        <div class="body">
+          <h3>FMTraj: Zero-shot GPS Trajectory Generation with Flow Matching Model</h3>
+          <p class="authors"><b>Thomas Jiajun Liang</b>, Chen Chu, Cyrus Shahabi</p>
+          <p class="venue">In preparation</p>
+          <p>
+            Trajectory synthesis models conditioned on city topology generate convincing pseudo-trajectories within
+            a city, but transfer poorly to new cities: they lack generalizability and lean on trip-specific
+            conditions that already leak trajectory information. We study zero-shot cross-city generation,
+            synthesizing trajectories for an unseen city from a model trained elsewhere, using only planned routes
+            and information available from the map.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+
+      <article class="item">
+        <div class="head"><h3>New Voyage LLC <span class="where">&middot; Boston, MA</span></h3><span class="date">Feb 2026 &ndash; present</span></div>
+        <p class="meta">AI Researcher &middot; AI for Science, AI Workflow Tooling</p>
+        <ul>
+          <li>Build internal AI workflow tools that streamline day-to-day research and engineering work.</li>
+          <li>Design AI-for-Science algorithms for composite material design and deNO<sub>x</sub> process optimization, built to stay reliable with scarce and noisy experimental data.</li>
+        </ul>
+      </article>
+
+      <article class="item">
+        <div class="head"><h3>iFLYTEK Co. <span class="where">&middot; Hefei, China</span></h3><span class="date">Jun 2023 &ndash; Aug 2023</span></div>
+        <p class="meta">Software Developer Intern, Backend &middot; Node.js, Express.js, MongoDB</p>
+        <ul>
+          <li>Built RESTful APIs with Express.js and Mongoose for a nationwide after-sale service backend, sped up store-location queries by 20% with geospatial indexing, and set up a CI/CD pipeline with Git, Jenkins, Docker and Kubernetes.</li>
+        </ul>
+      </article>
+    </section>
+
+    <footer>
+      <p>Last updated November 2026</p>
+    </footer>
+  </main>
+</body>
+</html>
