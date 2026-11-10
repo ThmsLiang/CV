@@ -50,6 +50,7 @@
           <h3>HALT: Human-in-the-Loop Data Acquisition for Supervised Traffic Causality Discovery</h3>
           <p class="authors"><b>Thomas Jiajun Liang</b>, John Krum, Ibrahim Sabek</p>
           <p class="venue">SIGSPATIAL 2026 Research Track</p>
+          <p class="meta">Advisors: Dr. John Krum, Prof. Ibrahim Sabek</p>
           <p>
             Building on our team&rsquo;s supervised, event-based traffic causality discovery algorithm NEXICA, this
             work targets its main bottleneck: choosing which labels to propose for traffic experts to review so the
@@ -64,12 +65,32 @@
 
       <article class="project">
         <figure class="fig">
+          <img src="images/fmtraj.png" alt="FMTraj method overview" onerror="this.parentNode.classList.add('empty');this.remove()">
+        </figure>
+        <div class="body">
+          <h3>FMTraj: Zero-shot GPS Trajectory Generation with Flow Matching Model</h3>
+          <p class="authors"><b>Thomas Jiajun Liang</b>, Chen Chu, Cyrus Shahabi</p>
+          <p class="venue">In preparation</p>
+          <p class="meta">Advisors: Chen Chu (PhD student), Prof. Cyrus Shahabi</p>
+          <p>
+            Trajectory synthesis models conditioned on city topology generate convincing pseudo-trajectories within
+            a city, but transfer poorly to new cities: they lack generalizability and lean on trip-specific
+            conditions that already leak trajectory information. We study zero-shot cross-city generation,
+            synthesizing trajectories for an unseen city from a model trained elsewhere, using only planned routes
+            and information available from the map.
+          </p>
+        </div>
+      </article>
+
+      <article class="project">
+        <figure class="fig">
           <img src="images/mosaicpop.png" alt="Population density, VIIRS nighttime lights and WSF settlement fraction for the Lucerne–Zug region" onerror="this.parentNode.classList.add('empty');this.remove()">
         </figure>
         <div class="body">
           <h3>MosaicPop: Multi-Resolution Residual Population Mapping</h3>
           <p class="authors"><b>Thomas Jiajun Liang</b>, Zihang Gao, Qianshu Peng</p>
           <p class="venue">Under review, KDD Cycle 1</p>
+          <p class="meta">Collaborators: Zihang Gao, Qianshu Peng (graduate classmates)</p>
           <p>
             We combine conditions at different resolutions, VIIRS nighttime light (500&nbsp;m) and the WSF
             settlement mask (10&nbsp;m), on the hypothesis that each carries different information about where
@@ -77,24 +98,6 @@
             and census-less prediction (estimating density without census input). Because population is distributed
             unevenly, we use residual learning: a simple baseline produces an initial estimate, and a diffusion
             model predicts its correction from the fused multi-resolution conditions.
-          </p>
-        </div>
-      </article>
-
-      <article class="project">
-        <figure class="fig">
-          <img src="images/fmtraj.png" alt="FMTraj method overview" onerror="this.parentNode.classList.add('empty');this.remove()">
-        </figure>
-        <div class="body">
-          <h3>FMTraj: Zero-shot GPS Trajectory Generation with Flow Matching Model</h3>
-          <p class="authors"><b>Thomas Jiajun Liang</b>, Chen Chu, Cyrus Shahabi</p>
-          <p class="venue">In preparation</p>
-          <p>
-            Trajectory synthesis models conditioned on city topology generate convincing pseudo-trajectories within
-            a city, but transfer poorly to new cities: they lack generalizability and lean on trip-specific
-            conditions that already leak trajectory information. We study zero-shot cross-city generation,
-            synthesizing trajectories for an unseen city from a model trained elsewhere, using only planned routes
-            and information available from the map.
           </p>
         </div>
       </article>
